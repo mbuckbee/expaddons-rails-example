@@ -2,7 +2,7 @@
     "name": "Expedited Addons Alpha App",
     "description": "A high level interface to exercise the Expedited Add-ons ",
     "website": "https://www.expeditedaddons.com",
-    "repository": "https://github.com/mbuckbee/rails",
+    "repository": "https://github.com/mbuckbee/expaddons-rails-example",
     "logo": "https://www.expeditedaddons.com/weightsandmeasures.png",
     "success_url": "/",
     "addons": [
