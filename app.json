@@ -1,0 +1,23 @@
+{
+    "name": "Expedited Addons Alpha App",
+    "description": "A high level interface to exercise the Expedited Add-ons ",
+    "website": "https://www.expeditedaddons.com",
+    "repository": "https://github.com/mbuckbee/rails",
+    "logo": "https://www.expeditedaddons.com/weightsandmeasures.png",
+    "success_url": "/",
+    "addons": [
+        "weightsandmeasures:test",
+        "ipinvestigator:test",
+        "resizer:test",
+        "urlxray:test",
+        "watermarker:test",
+        "iptoearth:test",
+        "qrackajack:test",
+        "useragentidentifier:test",
+        "webtopdf:test",
+        "geocody:test",
+        "realemail:test",
+        "scrapetastic:test"
+    ],
+    "generator": "https://www.expeditedssl.com/heroku-button-maker"
+}
