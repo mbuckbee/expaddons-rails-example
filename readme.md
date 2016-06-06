@@ -3,8 +3,9 @@
 
 This app will help you add the Expedited Addons to a new Heroku instance. After you have set everything up, the homepage of your new app will be populated with a series of forms to play around with the API/Add-ons.
 
+<center>
 ![screenshot](screenshot.png)
-
+</center>
 
 
 ## Step 1
