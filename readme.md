@@ -57,14 +57,20 @@ heroku addons:create realemail:test
 heroku addons:create scrapetastic:test
 ```
 
-## Step 4 
+## Step 4
+
+Push the test app, up to your newly created Heroku app-instance.
+
+`git push heroku master`
+
+## Step 5
 
 With your web browser, browse to the homepage of your new app. It will be a url like `https://ocean-3403.herokuapp.com`. From there, please play around with anything that seems interesting. 
 
-## Step 5 
+## Step 6 
 
 Any weirdness, confusion, suggestions, please email me at mike@expeditedaddons.com
 
-## Step 6 
+## Step 7
 
-Thanks again for doing this, much *much* appreciated.
+Accept my heartfelt thanks again for doing this. Much *much* appreciated.
