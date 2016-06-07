@@ -1,0 +1,51 @@
+echo "CLONING EXAMPLE REPO"
+`git clone https://github.com/mbuckbee/expaddons-rails-example.git`
+
+echo "CREATING NEW HEROKU APP"
+
+`cd expaddons-rails-example && heroku create`
+
+echo "PROVISIONING EXPEDITED ADD-ONS"
+
+echo "Adding -> Weights and Measures"
+ADDON=$(cd expaddons-rails-example && heroku addons:create weightsandmeasures:test)
+
+echo "Adding -> IP Investigator"
+ADDON=`cd expaddons-rails-example && heroku addons:create ipinvestigator:test`
+
+echo "Adding -> Resizer"
+ADDON=`cd expaddons-rails-example && heroku addons:create resizer:test`
+
+echo "Adding -> URL X-Ray"
+ADDON=`cd expaddons-rails-example && heroku addons:create urlxray:test`
+
+echo "Adding -> Watermarker"
+ADDON=`cd expaddons-rails-example && heroku addons:create watermarker:test`
+
+echo "Adding -> IP to Earth"
+ADDON=`cd expaddons-rails-example && heroku addons:create iptoearth:test`
+
+echo "Adding -> Qrackajack"
+ADDON=`cd expaddons-rails-example && heroku addons:create qrackajack:test`
+
+echo "Adding -> User Agent Identifier"
+ADDON=`cd expaddons-rails-example && heroku addons:create useragentidentifier:test`
+
+echo "Adding -> Web to PDF"
+ADDON=`cd expaddons-rails-example && heroku addons:create webtopdf:test`
+
+echo "Adding -> Geocody"
+ADDON=`cd expaddons-rails-example && heroku addons:create geocody:test`
+
+echo "Adding -> Real Email"
+ADDON=`cd expaddons-rails-example && heroku addons:create realemail:test`
+
+echo "Adding -> Scrapetastic"
+ADDON=`cd expaddons-rails-example && heroku addons:create scrapetastic:test`
+ADDON=`cd expaddons-rails-example && heroku addons:create heroku-postgresql:hobby-dev`
+
+echo "PUSHING EXAMPLE APP CODE"
+`cd expaddons-rails-example &&  git push heroku master`
+
+echo "OPENING SITE"
+`cd expaddons-rails-example &&  heroku open`
