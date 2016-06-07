@@ -8,11 +8,25 @@ This app will help you add the Expedited Addons to a new Heroku instance. After 
 </center>
 
 
+## Overview
+
+This will setup a new live Heroku app containing:
+
+- All 12 of the new Expedited Add-ons
+
+- Web Forms to test all the addons
+
+- Example inputs and links to the API explorer and Github repo for each Add-on's gem
+
+There is no need to run the application locally.
+
 ## Step 1
 
 Clone this to your local dev machine
 
 ## Step 2 
+
+From the directory you cloned the repo to:
 
 Provision a new Heroku App, the free app tier is more than sufficient for this.
 
