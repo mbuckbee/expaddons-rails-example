@@ -12,7 +12,9 @@ After you have set everything up, the homepage of this new app will be populated
 
 ## Overview
 
-This will setup a new live Heroku app containing:
+This will setup a new live app on Heroku entirely within the free tier. 
+
+The app will contain:
 
 - All 12 of the new Expedited Add-ons
 
@@ -20,11 +22,32 @@ This will setup a new live Heroku app containing:
 
 - Example inputs and links to the API explorer and Github repo for each Add-on's gem
 
-There is no need to run the application locally.
+There is no need to run the application locally. The install and all steps listed here are to setup the application under your Heroku account and issue Add-ons with associated private API Keys to your account.
+
+
+# Automatic Installation Script
+
+From a working directory run the following in a terminal:
+
+`bash <(curl -s https://raw.githubusercontent.com/mbuckbee/expaddons-rails-example/master/public/install.txt)`
+
+This should handle everything for you (clone the repo, add the addons, setup a new Heroku application, push the code and open your browser).
+
+You can review the install script at: https://raw.githubusercontent.com/mbuckbee/expaddons-rails-example/master/public/install.txt
+
+If everything goes correctly, about two minutes after starting the script you'll be evaluating the addons on your own Heroku App.
+
+
+# Manual Install Instructions
+
+If you'd prefer not to use the Automatic Installation script you can manually install the addons via the steps outlined below:
 
 ## Step 1
 
-Clone this to your local dev machine
+Clone this repo to your local dev machine. In your terminal, switch to the newly created directory/repo.
+
+`cd expaddons-rails-example`
+
 
 ## Step 2 
 
@@ -55,7 +78,10 @@ heroku addons:create webtopdf:test
 heroku addons:create geocody:test
 heroku addons:create realemail:test
 heroku addons:create scrapetastic:test
+heroku addons:create heroku-postgresql:hobby-dev
 ```
+
+Postgres (free tier) is needed to keep Rails from freaking out.
 
 ## Step 4
 

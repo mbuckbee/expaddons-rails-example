@@ -47,5 +47,7 @@ ADDON=`cd expaddons-rails-example && heroku addons:create heroku-postgresql:hobb
 echo "PUSHING EXAMPLE APP CODE"
 `cd expaddons-rails-example &&  git push heroku master`
 
+echo "THANKS SO MUCH FOR HELPING ME WITH THIS -- Mike"
+
 echo "OPENING SITE"
 `cd expaddons-rails-example &&  heroku open`
